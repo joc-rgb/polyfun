@@ -76,7 +76,7 @@ function App() {
     const postId = makeid(6)
     await db.collection('MeetUp').create([postId, db.collection('User').record(publicKey), postName, location, desc])
   }
-  if(data)console.log(data)
+ 
   return (
     <div className="flex flex-col w-full h-[100vh] text-black bg-white p-8">
       <div className="p-4 w-full flex items-center justify-center">
