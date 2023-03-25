@@ -1,7 +1,6 @@
 import React from 'react'
 
 const MeetUpItem = (post) => {
-    console.log(post.post)
   return (
     <div className='bg-slate-100 rounded-xl p-3'>
         <p className='font-semibold text-lg'>{post.post.name}</p>
