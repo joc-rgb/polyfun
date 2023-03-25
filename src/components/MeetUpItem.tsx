@@ -6,7 +6,7 @@ const MeetUpItem = (post) => {
         <p className='font-semibold text-lg'>{post.post.name}</p>
         <div className='max-w-fit'>
         <p className='font-semibold text-sm p-2 py-1 bg-slate-300 rounded-2xl ' >{post.post.location}</p></div>
-        <p>{post.post.desc}</p>
+        <p className='text-gray-900'>{post.post.desc}</p>
     </div>
   )
 }
