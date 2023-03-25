@@ -96,7 +96,10 @@ function App() {
       </>):
       
       <button onClick={signIn} >Login</button>}
-      
+      <div className="flex flex-col items-center justify-center gap-4">
+        <p className="text-3xl font-semibold">All MeetUp</p>
+        {data && !loading && data.data.map(post=><MeetUpItem post={post.data} />)}
+      </div>
       
     </div>
   )
